@@ -10,7 +10,8 @@
             <div class="panel-heading">Flights delay Histogram</div>
             <div class="panel-body">
                 <canvas id="bar" class="chart chart-bar" chart-data="bar.data" chart-labels="bar.labels"
-                 chart-series="bar.series" chart-options="bar.options"> </canvas>
+                 chart-series="bar.series" chart-options="bar.options" ng-if="bar.data.length !== 0"> </canvas>
+                 <span ng-if="bar.data.length === 0">No data available for this origin and destination pairs !</span>
             </div>
         </div>
     </div>
@@ -19,7 +20,8 @@
             <div class="panel-heading">Flights delay ratio</div>
             <div class="panel-body">
                 <canvas id="bar-ratio" class="chart chart-bar" chart-data="barRatio.data" chart-labels="barRatio.labels"
-                 chart-series="barRatio.series" chart-options="barRatio.options"> </canvas>
+                 chart-series="barRatio.series" chart-options="barRatio.options" ng-if="barRatio.data.length !== 0"> </canvas>
+                 <span ng-if="barRatio.data.length === 0">No data available for this origin and destination pairs !</span>
             </div>
         </div>
     </div>
@@ -31,7 +33,8 @@
             <div class="panel-heading">Delays and  distance correlation</div>
             <div class="panel-body">
                 <canvas id="scatter" class="chart chart-bubble" chart-data="scatter.data" chart-labels="scatter.labels"
-                 chart-series="scatter.series" chart-options="scatter.options"> </canvas>
+                 chart-series="scatter.series" chart-options="scatter.options" ng-if="delayDistanceArray.length !== 0"> </canvas>
+                 <span ng-if="delayDistanceArray.length === 0">No data available for this origin and destination pairs !</span>
             </div>
         </div>
     </div>
