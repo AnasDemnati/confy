@@ -3,6 +3,14 @@ body {
     padding-bottom: 20px;
 }
 
+.zoom-in:hover #zoom-in-text1, .zoom-in:hover #zoom-in-text2, .zoom-in:hover #zoom-in-text3 {
+      display:block;
+  }
+
+#zoom-in-text1, #zoom-in-text2, #zoom-in-text3 {
+    display: none;
+}
+
 .navbar-default{
   background-color: #337ab7;
 }
