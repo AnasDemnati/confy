@@ -19,7 +19,7 @@ var all = {
     root: path.normalize(__dirname + '/../'),
 
     // Server port
-    port: process.env.PORT || 3000,
+    port: process.env.app_port || 10597,
 
     // Should we populate the DB with sample data?
     seedDB: false,
@@ -30,7 +30,7 @@ var all = {
     },
 
     // List of user roles
-    userRoles: ['user', 'oganizer', 'program', 'reviewer', 'author', 'speaker'],
+    userRoles: ['user', 'owner', 'admin'],
 
     // MongoDB connection options
     mongo: {
@@ -40,7 +40,7 @@ var all = {
             }
         }
     },
-    host: process.env.HOSTNAME || 'http://localhost:9090',
+    host: process.env.HOSTNAME || 'http://easyshop.cloudno.de:8080',
 
     sendGridAPI: "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",
     //admin: 'hyldau@engineer.com'

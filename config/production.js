@@ -4,18 +4,20 @@
 // =================================
 module.exports = {
   // Server IP
-  ip:       process.env.IP ||
-            undefined,
+  ip:       process.env.OPENSHIFT_NODEJS_IP ||
+            process.env.IP ||
+            'http://easyshop.cloudno.de',
 
   // Server port
-  port:     process.env.PORT ||
-            8080,
+  port:     process.env.OPENSHIFT_NODEJS_PORT ||
+            process.env.PORT ||
+            '8080',
 
   // MongoDB connection options
   mongo: {
-    uri:    process.env.MONGOLAB_URI ||
-            process.env.MONGOHQ_URL ||
-            process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
-            'mongodb://localhost/confy'
+    uri:    'mongodb://otawara:rouidate159357@ds011432.mlab.com:11432/easyshopdb'
+            // process.env.MONGOLAB_URI ||
+            // process.env.MONGOHQ_URL ||
+            // process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
   }
 };
