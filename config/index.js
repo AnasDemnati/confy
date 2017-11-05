@@ -42,7 +42,7 @@ var all = {
     },
     host: process.env.HOSTNAME || 'http://easyshop.cloudno.de:8080',
 
-    sendGridAPI: "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",
+    // sendGridAPI: "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",
     //admin: 'hyldau@engineer.com'
 };
 
