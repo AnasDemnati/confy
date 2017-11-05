@@ -1,0 +1,149 @@
+<ul class="nav nav-list">
+{% if confy.open %}
+    <li class="active open">
+{% else %}
+    <li class="">
+{% endif %}
+        <a href="#" class="dropdown-toggle">
+            <i class="menu-icon fa fa-book"></i>
+            <span class="menu-text">
+                Congres
+            </span>
+
+            <b class="arrow fa fa-angle-down"></b>
+        </a>
+
+        <b class="arrow"></b>
+
+        <ul class="submenu">
+        {% if confy.new %}
+            <li class="active">
+        {% else %}
+            <li class="">
+        {% endif %}
+                <a href="/organizer/new-confy">
+                    <i class="menu-icon fa fa-plus"></i>
+                    Creer Congre
+                </a>
+
+                <b class="arrow"></b>
+            </li>
+        {% if confy.list %}
+            <li class="active">
+        {% else %}
+            <li class="">
+        {% endif %}
+                <a href="/organizer/list-confy">
+                    <i class="menu-icon fa fa-list"></i>
+                    Liste Congres
+                </a>
+
+                <b class="arrow"></b>
+            </li>
+        </ul>
+    </li>
+    {% if program.open %}
+        <li class="active open">
+    {% else %}
+        <li class="">
+    {% endif%}
+        <a href="#" class="dropdown-toggle">
+            <i class="menu-icon fa fa-calendar"></i>
+            <span class="menu-text">
+                Programmes
+            </span>
+
+            <b class="arrow fa fa-angle-down"></b>
+        </a>
+
+        <b class="arrow"></b>
+
+        <ul class="submenu">
+        {% if program.list_experts %}
+            <li class="active">
+        {% else %}
+            <li class="">
+        {% endif %}
+                <a href="/organizer/list-experts">
+                    <i class="menu-icon fa fa-users"></i>
+                    Reviewers
+                </a>
+
+                <b class="arrow"></b>
+            </li>
+
+        {% if program.list_membres %}
+            <li class="active">
+        {% else %}
+            <li class="">
+        {% endif %}
+                <a href="/organizer/list-membres">
+                    <i class="menu-icon fa fa-users"></i>
+                    Membres
+                </a>
+
+                <b class="arrow"></b>
+            </li>
+        </ul>
+    </li>
+{% if auteurs %}
+    <li class="active">
+{% else %}
+    <li class="">
+{% endif %}
+        <a href="/organizer/list-auteurs">
+            <i class="menu-icon fa fa-pencil"></i>
+            <span class="menu-text">
+                Authors
+            </span>
+        </a>
+
+        <b class="arrow"></b>
+    </li>
+
+{% if participants %}
+    <li class="active">
+{% else %}
+    <li class="">
+{% endif %}
+        <a href="/organizer/list-participants">
+            <i class="menu-icon fa fa-users"></i>
+            <span class="menu-text">
+                Participants
+            </span>
+        </a>
+
+        <b class="arrow"></b>
+    </li>
+
+{% if badges %}
+    <li class="active">
+{% else %}
+    <li class="">
+{% endif %}
+        <a href="/organizer/badges">
+            <i class="menu-icon fa fa-barcode"></i>
+            <span class="menu-text">
+                Badges
+            </span>
+        </a>
+
+        <b class="arrow"></b>
+    </li>
+
+{% if mailing %}
+    <li class="active">
+{% else %}
+    <li class="">
+{% endif %}
+        <a href="/organizer/mailing">
+            <i class="menu-icon fa fa-envelope"></i>
+            <span class="menu-text">
+                Mailing
+            </span>
+        </a>
+
+        <b class="arrow"></b>
+    </li>
+
+</ul>

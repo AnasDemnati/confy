@@ -1,0 +1,169 @@
+{% extends '../index.html' %}
+
+{% block styleSheet %}{% endblock %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs" id="breadcrumbs">
+        <script type="text/javascript">
+            try {
+                ace.settings.check('breadcrumbs', 'fixed')
+            } catch (e) {}
+        </script>
+
+        <ul class="breadcrumb">
+            <li>
+                <i class="ace-icon fa fa-home home-icon"></i>
+                <a href="/program/index">Home</a>
+            </li>
+            
+            <li>
+                <i class="ace-icon fa fa-book book-icon"></i>
+                <a href="#">Config congre</a>
+            </li>
+            
+            <li class="active">Phases</li>
+        </ul>
+        <!-- /.breadcrumb -->
+        <!-- /.nav-search -->
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="page-header">
+        <h1>
+            Phases
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+                Gerer les phases du congres
+            </small>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="timeline-1">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <div class="timeline-container">
+                            <div class="timeline-label">
+                                <span class="label label-primary arrowed-in-right label-lg">
+                                    <b>Soumission des publication</b>
+                                </span>
+                            </div>
+
+                            <div class="timeline-items">
+                                <div class="timeline-item clearfix">
+                                    <div class="timeline-info">
+                                        <i class="timeline-indicator ace-icon fa fa-cutlery btn btn-success no-hover"></i>
+                                        <span class="label label-info label-sm">17/02/2016</span>
+                                    </div>
+
+                                    <div class="widget-box transparent">
+                                        <div class="widget-header widget-header-small">
+                                            <h5 class="widget-title smaller">
+                                                <a href="#" class="blue">Susan</a>
+                                                <span class="grey">reviewed a product</span>
+                                            </h5>
+                                            <span class="widget-toolbar">
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-check green bigger-130"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-pencil blue bigger-125"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-times red bigger-125"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.timeline-items -->
+                        </div><!-- /.timeline-container -->
+                        <div class="timeline-container">
+                            <div class="timeline-label">
+                                <span class="label label-default arrowed-in-right label-lg">
+                                    <b>Selection des publication</b>
+                                </span>
+                            </div>
+
+                            <div class="timeline-items">
+                                <div class="timeline-item clearfix">
+                                    <div class="timeline-info">
+                                        <i class="timeline-indicator ace-icon fa fa-cutlery btn btn-success no-hover"></i>
+                                        <span class="label label-default label-sm">17/02/2016</span>
+                                    </div>
+
+                                    <div class="widget-box transparent">
+                                        <div class="widget-header widget-header-small">
+                                            <h5 class="widget-title smaller">
+                                                <a href="#" class="blue">Susan</a>
+                                                <span class="grey">reviewed a product</span>
+                                            </h5>
+                                            <span class="widget-toolbar">
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-check green bigger-130"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-pencil blue bigger-125"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-times red bigger-125"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.timeline-items -->
+                        </div><!-- /.timeline-container -->
+                        <div class="timeline-container">
+                            <div class="timeline-label">
+                                <span class="label label-success arrowed-in-right label-lg">
+                                    <b>Finalisation</b>
+                                </span>
+                            </div>
+
+                            <div class="timeline-items">
+                                <div class="timeline-item clearfix">
+                                    <div class="timeline-info">
+                                        <i class="timeline-indicator ace-icon fa fa-cutlery btn btn-success no-hover"></i>
+                                        <span class="label label-success label-sm">17/02/2016</span>
+                                    </div>
+
+                                    <div class="widget-box transparent">
+                                        <div class="widget-header widget-header-small">
+                                            <h5 class="widget-title smaller">
+                                                <a href="#" class="blue">Susan</a>
+                                                <span class="grey">reviewed a product</span>
+                                            </h5>
+                                            <span class="widget-toolbar">
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-check green bigger-130"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-pencil blue bigger-125"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="ace-icon fa fa-times red bigger-125"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.timeline-items -->
+                        </div><!-- /.timeline-container -->                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
