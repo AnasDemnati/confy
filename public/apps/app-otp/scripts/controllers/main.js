@@ -14,6 +14,7 @@
     mainCtrl.$inject = ['$scope', '$state', 'DataStore', '$csv'];
 
     function mainCtrl ($scope, $state, DataStore, $csv) {
+      $scope.dataLoading = true;
       $scope.chosenOrigin = "Choose origin";
       $scope.chosenDest = "Choose destination";
       $scope.selectedOrigin = $scope.chosenOrigin;
@@ -40,6 +41,7 @@
         })
         .then(function(flightsJSON) {
           getAllDest(flightsJSON);
+          $scope.dataLoading = false;
         })
         .catch(function(err) {
           console.error(err);
